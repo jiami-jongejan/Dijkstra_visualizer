@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans 3' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.leaflet-control-layers label {
+  font-family: 'Source Sans 3' !important;
+  font-size: 18px;
+  weight: 800;
+}
+
+.leaflet-control-layers label {
+  font-family: 'Source Sans 3' !important;
+  font-size: 18px;
+  padding: 5%;
+}
+
+form {
+  position: absolute;
+  z-index: 10000;
+  left: 1%;
+  bottom: 1%;
+  display: -webkit-inline-box;
+}
+
+button {
+  background: rgb(255, 255, 255);
+  border: 2px solid lightgray;
+  padding: 10%;
+  border-radius: 5px;
+  font-family: "Source Sans 3";
+  font-size: 18px;
+  outline-style: none;
+  float: left;
+  margin-right: 10%;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 10000;
+  width: 170px;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  font-family: "Source Sans 3";
+  text-align: center;
+  font-size: 18px;
+  background-color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.backgroundOverlay {
+  position: absolute;
+  z-index: 100000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+
+.welcomePopup {
+  position: fixed;
+  width: 500px;
+  z-index: 10000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Source Sans 3';
+  font-size: 18px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: #005bc5;
+
+}
+
+.closeIcon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.backgroundOverlay {
+  display: ${showWelcomePopup ? 'block' : 'none'};
+}
+
+.dropdown label {
+  font-size: 25px;
+  top: 3px;
+  position: relative;
+}
+
+#citySelect {
+  border: none;
+  font-family: 'Source Sans 3';
+  font-size: 20px;
+}
+
+.welcomePopup img {
+  max-width: 100%;
+  padding-bottom: 20px;
+}
