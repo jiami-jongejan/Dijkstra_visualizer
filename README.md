@@ -41,7 +41,7 @@ Node.js is used in this application to be able to run it on a localhost. Check i
 
 Clone the repo
    ```sh
-   git clone https://github.com/jiami-jongejan/visualize-sort-algorithms.git
+   git clone https://github.com/jiami-jongejan/Dijkstra_visualizer
    ```
 Install NPM packages
    ```sh
