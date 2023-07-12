@@ -59,7 +59,7 @@ export default function App() {
             <FaTimes />
           </span>
           <img src={demo} alt="demo" />
-          Welcome to the <b>Dijkstra visualizer</b>. This is a pathfinding visualizer based on <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra's algorithm</a>. If you close the window, you will be able to start. Note that not all paths are possible, only the paths that are inside the supported area. Click the layer button right top on the screen to see the supported areas. For more information about the project, please visit <a href="https://github.com/jiami-jongejan/Dijkstra-visualizer">Github</a>.
+          Welcome to the <b>Dijkstra visualizer</b>. This is a pathfinding visualizer based on <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra's algorithm</a>. If you close the window, you will be able to start. Note that not all paths are possible, only the paths that are inside the supported area. Click the layer button right top on the screen to see the supported areas. For more information about the project, please visit <a href="https://github.com/jiami-jongejan/Dijkstra_visualizer">Github</a>.
         </div>
       )}
       {showWelcomePopup && <div className="backgroundOverlay"></div>}
