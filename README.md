@@ -24,24 +24,12 @@ I created this project for an take-home assignment for a software developer inte
 <br />
 <br />
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple steps below.
-
-### Prerequisites
-
-Node.js is used in this application to be able to run it on a localhost. Check if Node.js is installed to be able to open the application.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
 Clone the repo
    ```sh
    git clone https://github.com/jiami-jongejan/Dijkstra_visualizer
+   cd Dijkstra-visualizer
    ```
 Install NPM packages
    ```sh
