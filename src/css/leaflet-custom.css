@@ -91,9 +91,9 @@ a {
   cursor: pointer;
 }
 
-.backgroundOverlay {
+/* .backgroundOverlay {
   display: ${showWelcomePopup ? 'block' : 'none'};
-}
+} */
 
 .dropdown label {
   font-size: 25px;

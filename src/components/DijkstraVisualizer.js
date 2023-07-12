@@ -1,7 +1,7 @@
 import React from 'react';
 import ShortestPath from './ShortestPath';
 import { useEffect } from 'react';
-import { CircleMarker, Polyline, useMapEvents } from 'react-leaflet';
+import { CircleMarker, useMapEvents } from 'react-leaflet';
 import { findClosestCoordinates } from '../utils/helpers';
 import { calculateDistance } from '../utils/helpers';
 

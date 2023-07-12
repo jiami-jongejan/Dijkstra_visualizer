@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapContainer, TileLayer, LayersControl, SVGOverlay, CircleMarker, LayerGroup, Polyline } from 'react-leaflet';
+import { MapContainer, TileLayer, LayersControl, SVGOverlay} from 'react-leaflet';
 import { FaTimes } from 'react-icons/fa';
 import DijkstraVisualizer from '../components/DijkstraVisualizer';
 import GraphNodes from '../components/GraphNodes';
@@ -66,7 +66,7 @@ export default function App() {
       <div className="dropdown">
         <label htmlFor="citySelect">📍 </label>
         <select id="citySelect" value={selectedCity} onChange={handleCityChange}>
-         {/* <option value="amsterdam">Amsterdam</option> */} // Commented out since Amsterdam is only partially complete
+         {/* <option value="amsterdam">Amsterdam</option> */ }
           <option value="georgetown">Georgetown</option>
           <option value="newyork">New York</option>
         </select>
