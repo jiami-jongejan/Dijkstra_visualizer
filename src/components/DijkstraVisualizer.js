@@ -1,6 +1,6 @@
 import React from 'react';
 import ShortestPath from './ShortestPath';
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { CircleMarker, useMapEvents } from 'react-leaflet';
 import { findClosestCoordinates } from '../utils/helpers';
 import { calculateDistance } from '../utils/helpers';
@@ -37,7 +37,7 @@ function DijkstraVisualizer({ graph }) {
 
   /* Based on Dijksta's algorithm
   See: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm */
-  const runDijkstra = () => {
+  const runDijkstra = useCallback(() => {
     if (!startPos || !endPos) {
       return;
     }
@@ -119,11 +119,11 @@ function DijkstraVisualizer({ graph }) {
       setShortestPath([]);
     }
 
-  };
+  }, [endPos, graph, startPos]);
 
   useEffect(() => {
-    runDijkstra()
-  }, [endPos]);
+    runDijkstra();
+  }, [endPos, runDijkstra]);
 
   return (
     <div>
