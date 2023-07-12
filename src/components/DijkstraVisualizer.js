@@ -39,6 +39,7 @@ function DijkstraVisualizer({ graph }) {
   See: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm */
   const runDijkstra = useCallback(() => {
     if (!startPos || !endPos) {
+      setShortestPath([]);
       return;
     }
     const startNodeId = Object.entries(graph).find(
@@ -49,53 +50,51 @@ function DijkstraVisualizer({ graph }) {
       ([key, value]) =>
         value.latitude === endPos[0] && value.longitude === endPos[1]
     )[0];
-
+  
     const distances = {};
     const previous = {};
     const queue = [];
-
+  
     for (const vertex in graph) {
       distances[vertex] = Infinity;
       previous[vertex] = null;
       queue.push(vertex);
     }
-
+  
     distances[startNodeId] = 0;
-
+  
     while (queue.length > 0) {
       let minDistance = Infinity;
       let minVertex = null;
-
+  
       for (const vertex of queue) {
         if (distances[vertex] < minDistance) {
           minDistance = distances[vertex];
           minVertex = vertex;
-
-          console.log(vertex);
         }
       }
-
+  
       if (minVertex === null) {
         break;
       }
-
+  
       queue.splice(queue.indexOf(minVertex), 1);
-
+  
       const current = graph[minVertex];
       const neighbors = current.adjacent_nodes.map(String);
-
+  
       for (const neighbor of neighbors) {
         const neighborVertex = graph[neighbor];
-
+  
         if (!neighborVertex) {
           continue;
         }
-
+  
         const distance = calculateDistance(
           [current.latitude, current.longitude],
           [neighborVertex.latitude, neighborVertex.longitude]
         );
-
+  
         const totalDistance = distances[minVertex] + distance;
         if (totalDistance < distances[neighbor]) {
           distances[neighbor] = totalDistance;
@@ -103,22 +102,21 @@ function DijkstraVisualizer({ graph }) {
         }
       }
     }
-
+  
     if (previous[endNodeId]) {
       const path = [];
       let current = endNodeId;
-
+  
       while (current !== startNodeId) {
         path.unshift(current);
         current = previous[current];
       }
-
+  
       path.unshift(startNodeId);
       setShortestPath(path);
     } else {
       setShortestPath([]);
     }
-
   }, [endPos, graph, startPos]);
 
   useEffect(() => {
