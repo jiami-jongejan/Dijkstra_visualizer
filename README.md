@@ -24,7 +24,7 @@ I created this project for an take-home assignment for a software developer inte
 <br />
 <br />
 
-## Installation
+### Installation
 
 Clone the repo
    ```sh
