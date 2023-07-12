@@ -29,7 +29,7 @@ I created this project for an take-home assignment for a software developer inte
 Clone the repo
    ```sh
    git clone https://github.com/jiami-jongejan/Dijkstra_visualizer
-   cd Dijkstra-visualizer
+   cd Dijkstra_visualizer
    ```
 Install NPM packages
    ```sh
