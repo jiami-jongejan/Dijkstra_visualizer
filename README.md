@@ -20,7 +20,7 @@
 <img src="https://github.com/jiami-jongejan/Dijkstra-visualizer/blob/Dijkstra-visualize/src/images/demo.gif" alt="Screenshot">
 </div>
 <br/>
-I created this project for an take-home assignment for a software developer interview. It relies on <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra's famous algorithm</a>. A <a href= "https://main--incandescent-hamster-bac73d.netlify.app/">live demo can be found here</a>.
+I created this project for an take-home assignment for a software developer interview. It relies on <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra's famous algorithm</a>. A <a href= "https://main--incandescent-hamster-bac73d.netlify.app/">live demo can be found here</a>. I received the assignment and had less then 2 days to create everything from scratch. Therefore, I decided to focus on a few features.
 <br />
 <br />
 
